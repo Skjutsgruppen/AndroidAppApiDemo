@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="button">35dp</dimen>
+    <dimen name="largeText">22dp</dimen>
+    <dimen name="listText">17dp</dimen>
+    <dimen name="detailsText">17dp</dimen>
+    <dimen name="detailsLinkText">20dp</dimen>
+    
+
+</resources>

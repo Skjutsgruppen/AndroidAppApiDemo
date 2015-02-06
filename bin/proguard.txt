@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:38
+-keep class se.tankepaus.skjutsgruppen.FindRidesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class se.tankepaus.skjutsgruppen.SkjutsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class se.tankepaus.skjutsgruppen.SkjutsDetailsActivity { <init>(...); }
+

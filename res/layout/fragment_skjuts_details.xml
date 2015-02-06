@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="top|center" >
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="top|center"
+	        android:paddingTop="8dp" >
+	
+	        <TextView
+	            android:id="@+id/fromDestination"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="top|center"
+	            android:textSize="@dimen/largeText"
+	            android:textStyle="bold" />
+	
+	        <TextView
+	            android:id="@+id/toDestination"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="@dimen/largeText"
+	            android:textStyle="bold" />
+	
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/townsAlongTheWay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	
+	    <TextView
+	        android:id="@+id/dateTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/detailsText" />
+	
+	    <TextView
+	        android:id="@+id/journeyType"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/detailsText" />
+	
+	    <TextView
+	        android:id="@+id/seats"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/detailsText" />
+	
+	    <TextView
+	        android:id="@+id/commentsText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginBottom="20dp"
+	        android:lineSpacingExtra="4dp"
+	        android:textSize="@dimen/detailsText" />
+	
+		<TextView
+	        android:id="@+id/journeyLinkUrl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:autoLink="web"
+	        android:gravity="center_horizontal"
+	        android:layout_marginBottom="25dp"
+	        android:textSize="@dimen/detailsLinkText" />
+    
+	</LinearLayout>
+</ScrollView>

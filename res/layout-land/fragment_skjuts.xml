@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="horizontal"
+    android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true"  >
+
+    <ImageView
+        android:id="@+id/skjutsBild"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/skjuts_bg_text"
+        android:scaleType="fitXY"
+        android:src="@drawable/skjuts_bg" />
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="top|center"
+	    android:orientation="vertical" >
+    
+	   <TextView
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:paddingTop="8dp"
+	       android:text="@string/skjuts_where_to"
+	       android:textAppearance="?android:attr/textAppearanceMedium"
+	       android:textColor="@color/skjutsGrey"
+	       android:textSize="@dimen/largeText" />
+	
+	  <FrameLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+	
+	   <AutoCompleteTextView
+	       android:id="@+id/fromDestination"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_margin="10dp"
+	       android:gravity="center"
+	       android:background="@drawable/editview_style"
+	       android:textColor="@color/skjutsGrey"
+	       	android:textSize="@dimen/largeText"
+			android:inputType="text"
+			android:imeOptions="actionNext"
+	       	android:singleLine="true" />
+			
+		    <Button
+		        android:id="@+id/fromDestinationClearText"      
+		        android:layout_width="23dp"
+		        android:layout_height="23dp"
+		        android:layout_marginRight="13dp"
+		        android:layout_gravity="right|center_vertical"
+		        android:background="@drawable/ic_cleartext" />
+		
+		</FrameLayout>
+	
+	   <TextView
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="@string/skjuts_from"
+	       android:textAppearance="?android:attr/textAppearanceMedium"
+	       android:textColor="@color/skjutsGrey"
+	       android:textSize="@dimen/largeText" />
+	   
+		<FrameLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		    
+			<AutoCompleteTextView
+		       android:id="@+id/toDestination"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_margin="10dp"
+		       android:gravity="center"
+		       android:background="@drawable/editview_style"
+		       android:textColor="@color/skjutsGrey"
+		       android:textSize="@dimen/largeText"
+		       android:inputType="text"
+		       android:imeOptions="actionSearch"
+		       android:singleLine="true" />	
+			
+		    <Button
+		        android:id="@+id/toDestinationClearText"
+		        android:layout_width="23dp"
+		        android:layout_height="23dp"
+		        android:layout_gravity="right|center_vertical"
+		        android:layout_marginRight="13dp"
+		        android:background="@drawable/ic_cleartext" />
+		
+		</FrameLayout>
+	
+	   <Button
+	       android:id="@+id/searchButton"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:background="@color/skjutsGreen"
+	       android:paddingBottom="6dp"
+	       android:paddingLeft="40dp"
+	       android:paddingRight="40dp"
+	       android:paddingTop="8dp"
+	       android:text="@string/skjuts_search"
+	       android:textColor="@color/skjutsWhite"
+	       android:textSize="@dimen/button"
+	       android:typeface="sans" />
+    	
+    </LinearLayout>
+
+</LinearLayout>
